@@ -1,0 +1,27 @@
+-- FILE: style.css --
+/* Modern Blue Wide Layout - style.css */
+:root{
+  --bg:#f7fbff; --card:#ffffff; --accent:#1e6fb8; --muted:#5b6b78; --maxw:1200px;
+  --radius:12px; --sans: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{font-family:var(--sans);background:var(--bg);color:#122;line-height:1.5;margin:0}
+.container{max-width:var(--maxw);margin:40px auto;padding:28px}
+.header{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;letter-spacing:1px;color:var(--accent);font-size:22px}
+.nav{display:flex;gap:22px}
+.nav a{color:#0b2340;text-decoration:none;font-weight:600}
+.hero{background:linear-gradient(90deg,rgba(30,111,184,0.06),rgba(30,111,184,0.02));padding:30px;border-radius:10px;margin-top:18px}
+.h-title{font-size:28px;margin:0;color:#05233f}
+.h-sub{color:var(--muted);margin:8px 0 0}
+.section{background:var(--card);padding:22px;border-radius:8px;margin-top:18px;box-shadow:0 6px 18px rgba(15,40,60,0.04)}
+.section h2{margin:0 0 12px;color:var(--accent)}
+.two-col{display:flex;gap:20px}
+.col{flex:1}
+.skills-list{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:#eef6ff;color:var(--accent);padding:8px 12px;border-radius:20px;font-weight:600}
+.project{margin-bottom:12px}
+.experience-item{margin-bottom:12px}
+.footer{margin-top:26px;padding:18px;text-align:center;color:var(--muted);font-size:14px}
+@media(max-width:900px){.two-col{flex-direction:column}.container{margin:20px;padding:16px}}
+
